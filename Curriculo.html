@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="curriculo.css">
+    <link href="http://fonts.cdnfonts.com/css/jumbox" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/silence-rocken" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link href="http://fonts.cdnfonts.com/css/pf-din-text-cond-pro-light" rel="stylesheet">
+    <title>Joice Caroline Adão Doll</title>
+</head>
+
+<body>
+    <div id="general-container">
+        <header id="header">
+            <div id="info">
+                <h1>JOICE CAROLINE ADÃO DOLL</h1>
+                <p id="city">CRICIÚMA - SC - joice.doll2@yahoo.com</p>
+                <br>
+                <br>
+                <p class="content">Estudante de Engenharia de computação, atualmente em busca de desenvolvimento <br>
+                    para aprimorar as habilidades adquiridas por mim em meio acadêmico e também<br>
+                    através de cursos. </p>
+                <br>
+                <ul class="icons" data-anime="right">
+                    <li>
+                        <a href="https://www.linkedin.com/in/joice-doll/" target="_blank"><i
+                                class="devicon-linkedin-plain-wordmark"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/JoiceDoll" target="_blank"><i
+                                class="devicon-github-original-wordmark"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <nav id="nav">
+            <h2>EXPERIÊNCIA</h2>
+            <br>
+            <br>
+            <p id="experiencia">
+            <p class="Fontana">CONSTRUTORA FONTANA - 2020 / Atual</p>
+            <p class="content-fontana">
+                ✓ Alterações e personalizações de projetos;<br>
+                <br>
+                ✓ Orçamentos de modificações em projetos;<br>
+                <br>
+                ✓ Atendimento ao cliente e arquitetos no setor de engenharia.
+            </p>
+            </p>
+
+        </nav>
+
+        <section id="section">
+            <div class="estudos">
+                <h3>ESTUDOS</h3>
+                <p class="estudos-satc">
+                <p class="satc">FACULDADE SATC</p>
+                <p class="content-satc">
+                    ✓ Bacharelado, Engenharia de computação
+                </p>
+                <br>
+                <br>
+                <p class="estudos-senai">
+                <p class="senai">SENAI-SANTA CATARINA</p>
+                <p class="content-senai">
+                    ✓ Aprendizagem industrial, Construção Civil
+                </p>
+                <br>
+                <p class="estudos-udemy">
+                <p class="udemy">UDEMY</p>
+                <p class="content-udemy">
+                    ✓ HTML5 e CSS3 - Técnicas avançadas<br>
+                    <br>
+                    ✓ Javascript - Do básico ao avançado
+                </p>
+            </div>
+        </section>
+        <article id="article">
+            <div class="habilidades">
+                <h4>HABILIDADES</h4>
+                <ul class="list-icons-habilidades" data-anime="left">
+                    <li><i class="devicon-html5-plain-wordmark"></i></li>
+                    <li><i class="devicon-css3-plain-wordmark"></i></li>
+                    <li><i class="devicon-javascript-plain"></i></li>
+                    <li><i class="devicon-mysql-plain-wordmark"></i></li>
+                </ul>
+            </div>
+        </article>
+
+        <aside>
+            <img class="img" src="joice.jpeg" data-anime="top">
+            <div class="aside-info">
+                <ul class="aside-list" data-anime="left">
+                    <li id="sobre"><a href="#info" style="text-decoration:none">SOBRE</a></li>
+                    <br>
+                    <br>
+                    <li id="experiencia"><a href="#nav" style="text-decoration:none">EXPERIÊNCIA</a></li>
+                    <br>
+                    <br>
+                    <li id="estudos"><a href="#section" style="text-decoration:none">ESTUDOS</a></li>
+                    <br>
+                    <br>
+                    <li id="habilidades"><a href="#article" style="text-decoration:none">HABILIDADES</a></li>
+                </ul>
+
+
+            </div>
+        </aside>
+    </div>
+    <script>
+        const target = document.querySelectorAll("[data-anime]");
+        const animationClass = "animate";
+
+        function animeScroll() {
+            const windowTop = window.pageYOffset + ((window.innerHeight * 3) / 100);
+            target.forEach(function (element) {
+                ((windowTop) > element.offsetTop)
+                element.classList.add(animationClass);
+
+            })
+        }
+
+        animeScroll();
+        document.addEventListener("scroll", (function () {
+            animeScroll();
+        }));
+
+    </script>
+</body>
+
+</html>
