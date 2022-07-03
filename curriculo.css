@@ -67,6 +67,10 @@ a:visited{
    color:#fff
 }
 
+a{
+    color:#fff;
+}
+
 
 /*HEADER*/
 h1 {
@@ -186,7 +190,7 @@ h1 {
     margin-top: 320px;
     text-align: center;
     padding-left: 0;
-    margin-left: 30px;
+    margin-left: 20px;
     position: fixed;
 }
 
