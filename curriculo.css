@@ -1,6 +1,10 @@
 html {
     padding: 0;
     margin: 0;
+    box-sizing:border-box;
+}
+.body{
+    font-size:16px;
 }
 
 /*GRID*/
@@ -36,12 +40,16 @@ aside {
 #general-container {
     display: grid;
     grid-template-columns: 1.2fr 4fr;
-    grid-template-rows: 80vh 80vh 80vh 80vh;
+    grid-template-rows: 80vh 80vh 90vh 80vh;
     grid-gap: 2px;
     grid-template-areas: "aside header"
         "aside nav"
         "aside section"
         "aside article"
+
+}
+aside{
+    max-width: 350px;;
 }
 
 /*GENERAL*/
@@ -49,7 +57,7 @@ h2,
 h3,
 h4 {
     font-family: 'Jumbox', sans-serif;
-    font-size: 40px;
+    font-size: 2em;
     color: #41525a;
     text-align: start;
     margin-left: 90px;
@@ -75,7 +83,7 @@ a{
 /*HEADER*/
 h1 {
     font-family: 'Jumbox', sans-serif;
-    font-size: 50px;
+    font-size: 2.5vw;
     color: #41525a;
     text-align: start;
     margin-left: 90px;
@@ -84,27 +92,27 @@ h1 {
 #city {
     color: #495058;
     text-align: start;
+    font-size:1.3vw;
     font-family: 'Jumbox', sans-serif;
     margin-left: 90px;
-    margin-top: -26px;
+    margin-top: -6px;
 }
 
 .content {
     color: #969fa4;
-    font-size: 19px;
+    font-size: 1.5vw;
     font-family: Arial;
     margin-left: 90px;
 }
 
 .icons {
     position: absolute;
-    left: 300px;
-    top: 350px;
+    left: 30%;
 }
 
 .devicon-linkedin-plain-wordmark,
 .devicon-github-original-wordmark {
-    font-size: 90px;
+    font-size: 6vw;
     color: #495058;
     text-decoration: none;
 }
@@ -118,9 +126,9 @@ h1 {
 .Fontana {
     font-family: 'Jumbox', sans-serif;
     color: rgba(31, 30, 30, 0.788);
-    font-size: 18px;
+    font-size: 1.5vw;
     margin-left: 90px;
-    margin-top: -60px;
+    margin-top: -50px;
 }
 
 .content-fontana,
@@ -128,10 +136,10 @@ h1 {
 .content-senai,
 .content-udemy {
     color: #969fa4;
-    font-size: 19px;
+    font-size: 1.5vw;
     font-family: Arial;
     margin-left: 90px;
-    margin-top: -20px;
+    margin-top: -8px;
 }
 
 .satc,
@@ -139,7 +147,7 @@ h1 {
 .udemy {
     font-family: 'Jumbox', sans-serif;
     color: rgba(31, 30, 30, 0.788);
-    font-size: 18px;
+    font-size: 1.5vw;
     margin-left: 90px;
 }
 
@@ -152,12 +160,12 @@ h1 {
 }
 
 .content-udemy {
-    margin-top: 25px;
+    margin-top: 2vw;
 }
 
 /*ARTICLE*/
 .list-icons-habilidades {
-    font-size: 55px;
+    font-size: 4vw;
     margin-left: -120px;
     text-align: start;
     color: #495058;
@@ -177,8 +185,7 @@ h1 {
     border-radius: 80%;
     border: solid 10px #272b34;
     z-index: 1;
-    position: absolute;
-    left: 75px;
+left:80px;
     top: 90px;
     position:fixed;
 }
@@ -189,8 +196,8 @@ h1 {
     font-size: 20px;
     margin-top: 320px;
     text-align: center;
-    padding-left: 0;
-    margin-left: 20px;
+    position:relative;
+left:-3px;
     position: fixed;
 }
 
